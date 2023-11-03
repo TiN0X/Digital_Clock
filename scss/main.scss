@@ -1,0 +1,57 @@
+
+@import 'reset';
+
+*{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+	color: #fff;
+}
+
+body{
+	background-color: #000;
+}
+
+.bg-video{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+.container{
+	max-width: 800px;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+}
+
+.oclock{
+	width: 100%;
+	border-radius: 15px;
+	border: 10px solid #fff;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	background-color: rgba(255,255,255, 0.1);
+	backdrop-filter: blur(6px);
+
+	&__time{
+		display: block;
+		text-align: center;
+		font-size: 100px;
+		color: #fff;
+		letter-spacing: 10px;
+	}
+
+	&__subtitle{
+		text-align: center;
+		letter-spacing: 4px;
+		font-size: 20px;
+	}
+}
